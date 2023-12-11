@@ -5,7 +5,7 @@ function main() {
     
 	var s;
 
-    var contents = fetch('file.txt', {cache: "no-store"})
+    var contents = fetch('file.txt', {cache: "no-cache"})
 	.then((res) => res.text())
 	.then((text) => {
 		papers.innerHTML = text;
