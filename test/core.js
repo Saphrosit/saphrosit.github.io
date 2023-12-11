@@ -25,6 +25,9 @@ function main() {
     }
 
     papers.innerHTML += s; 
+
+    var HUB = MathJax.Hub;
+    HUB.Queue(["Typeset", HUB, "papers"]);
 }
 
 main();
