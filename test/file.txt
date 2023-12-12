@@ -1,1 +1,1 @@
-$\pi~\mathsf{s} 1$
+$\boldsymbol\Pi^1_1\mathsf{-CA}_0$

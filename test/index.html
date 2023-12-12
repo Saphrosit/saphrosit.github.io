@@ -2,24 +2,11 @@
 <html>
 <head>
 	<!-- MathJax-script -->
-	<script type="text/x-mathjax-config">
-		MathJax = {
-			tex: {
-				inlineMath: [['$', '$'], ["\\(", "\\)"]],
-				processEscapes: true,
-			}
-		}
-	</script>
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	
-</head>
-<body>
-	
-	<div id="papers">
-	
-	<script src="core.js"></script>
 	<script>
-		window.MathJax = {
+		MathJax = {
+			// startup: {
+			// 	typeset: false
+			// },
 			tex: {
 				inlineMath: [['$', '$'], ['\\(', '\\)']],
 				packages: {'[+]': ['boldsymbol']}
@@ -28,5 +15,22 @@
 		};
 	</script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	
+</head>
+<body>
+
+	<div id="math">	
+
+	<script>
+		var math = document.getElementById('math');
+		math.innerHTML = '$a+b$'
+	</script>
+
+	<button onClick="MathJax.typeset();">Start typesetting</button>
+
+	<div id="papers"></div>
+
+	<script src="core.js"></script>
 </body>
 </html>

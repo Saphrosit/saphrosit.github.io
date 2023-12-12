@@ -11,23 +11,7 @@ function main() {
 		papers.innerHTML = text;
 	   }).catch((e) => console.error(e));
 
-    // Reset output
-    // toInput.value = '';
-    papers.innerHTML = '';
-
-    // Contents to format
-    
-
-    // If empty, return nothing!
-    if (contents == '') {
-        console.log('Contents are empty!');
-        return;
-    }
-
-    papers.innerHTML += s; 
-
-    var HUB = MathJax.Hub;
-    HUB.Queue(["Typeset", HUB, "papers"]);
+	// MathJax.typeset();
 }
 
 main();
