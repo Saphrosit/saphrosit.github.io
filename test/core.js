@@ -8,7 +8,7 @@ function main() {
 	.then((text) => {
 		papers.innerHTML = text;
 	   })
-	.then(MathJax.typeset()).catch((e) => console.error(e));
+	.then(MathJax.typeset).catch((e) => console.error(e));
 
    	
 	   var fm = document.getElementById("fmath");
