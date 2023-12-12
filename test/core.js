@@ -11,6 +11,9 @@ function main() {
 		papers.innerHTML = text;
 	   }).catch((e) => console.error(e));
 
+    var fm = document.getElementById("fmath");
+    fm.innerHTML = '$\\sqrt{2}'
+
 	// MathJax.typeset();
 }
 
