@@ -7,6 +7,7 @@ function main() {
 	.then((res) => res.text())
 	.then((text) => {
 		papers.innerHTML = text;
+		MathJax.typeset();
 	   }).catch((e) => console.error(e));
 
    	
@@ -20,7 +21,6 @@ function main() {
 		   p2.innerHTML = text;
 		  }).catch((e) => console.error(e));
    
-	MathJax.typeset();
 }
 
 main();
