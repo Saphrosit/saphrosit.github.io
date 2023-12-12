@@ -6,10 +6,10 @@ function myfun(t) {
 	console.log('typeset called');
 }
 
-function main() {
+async function main() {
 
 
-    var contents = fetch('file.txt', {cache: "no-cache"})
+    var contents = await fetch('file.txt', {cache: "no-cache"})
 	.then((res) => res.text())
 	.then((text) => {
 		papers.innerHTML = text;
