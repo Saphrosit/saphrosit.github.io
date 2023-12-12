@@ -20,7 +20,7 @@ function main() {
 		   p2.innerHTML = text;
 		  }).catch((e) => console.error(e));
    
-	// MathJax.typeset();
+	MathJax.typeset();
 }
 
 main();
