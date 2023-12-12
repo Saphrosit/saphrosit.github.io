@@ -29,4 +29,17 @@ async function main() {
    
 	MathJax.typeset();
 }
-main();
+
+async function syncread() {
+	console.log('calling await fetch')
+	var contents = await fetch('file3.txt', {cache: "no-cache"}).then(response => response.text());
+	console.log('fetched content')
+	var s = document.getElementById("smath");
+
+	s.innerHTML = contents;
+	console.log(contents);
+}
+
+
+//main();
+syncread();
