@@ -5,8 +5,8 @@
 	<script>
 		MathJax = {
 			startup: {
-			 	typeset: false
-		    },
+				typeset: false
+			},
 			tex: {
 				inlineMath: [['$', '$'], ['\\(', '\\)']],
 				packages: {'[+]': ['boldsymbol']}
@@ -27,10 +27,16 @@
 		math.innerHTML = '$a+b$'
 	</script>
 
-	<button onClick="MathJax.typeset();">Start typesetting</button>
+	<!-- <button onClick="MathJax.typeset();">Start typesetting</button> -->
 
 	<div id="papers"></div>
 
 	<script src="core.js"></script>
+
+	<script>
+		window.onload = function() {
+      MathJax.typeset();
+	};
+	</script>
 </body>
 </html>
