@@ -38,6 +38,7 @@ async function syncread() {
 
 	s.innerHTML = contents;
 	console.log(contents);
+	MathJax.typeset();
 }
 
 
